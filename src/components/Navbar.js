@@ -37,8 +37,12 @@ const Navbar = () => {
               <span>ComCor</span>
             </Link>
           </div>
-          <div className="hamburgerContainer">
-            <span className="inline-block h-8 w-8 bg-black"></span>
+          <div className="inline-flex justify-center items-center w-6 h-6">
+            <div className="relative w-full h-0.5">
+              <span className="absolute top-[-7px] w-full h-[1px] bg-black"></span>
+              <span className="absolute w-full h-[1px] bg-black"></span>
+              <span className="absolute top-[7px] w-full h-[1px] bg-black"></span>
+            </div>
           </div>
           <ul>{renderedNavmenuItems}</ul>
         </div>
