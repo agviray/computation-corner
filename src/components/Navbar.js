@@ -51,17 +51,17 @@ const Navbar = () => {
           >
             <div
               className={`relative w-full h-[1px] bg-black transition-all duration-100 ${
-                isMenuOpen ? `rotate-[135deg]` : ``
+                isMenuOpen ? `bg-transparent rotate-[135deg]` : ``
               }`}
             >
               <span
                 className={`absolute top-[-7px] w-full h-[1px] bg-black transition-all duration-100 ${
-                  isMenuOpen ? `top-0` : ``
+                  isMenuOpen ? `top-[0px]` : ``
                 }`}
               ></span>
               <span
                 className={`absolute top-[7px] w-full h-[1px] bg-black transition-all duration-100 ${
-                  isMenuOpen ? `top-0 rotate-90` : ``
+                  isMenuOpen ? `top-[0px] rotate-90` : ``
                 }`}
               ></span>
             </div>
