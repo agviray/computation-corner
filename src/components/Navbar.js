@@ -31,42 +31,52 @@ const Navbar = () => {
   const renderedNavmenuItems = NAV_ITEMS.map(({ text, href }, index) => (
     <li key={index}>
       <Link href={href}>
-        <span>{text}</span>
+        <span className="inline-block w-full text-center py-3 md:px-4 md:py-0 md:leading-[64px]">
+          {text}
+        </span>
       </Link>
     </li>
   ));
 
   return (
-    <header>
-      <nav>
-        <div className="innerContainer">
+    <header className="w-full">
+      <nav className="h-16 bg-[red]">
+        <div className="innerContainer relative flex justify-between items-center h-full px-4">
           <div className="logoContainer">
             <Link href="/">
               <span>ComCor</span>
             </Link>
           </div>
           <div
-            className="inline-flex justify-center items-center w-6 h-6 hover:cursor-pointer"
+            className={`navMenu fixed top-0 right-0 bottom-0 w-9/12 py-24 bg-[lightgray] translate-x-full transition-all md:relative md:flex md:w-auto md:h-full md:py-0 md:opacity-1 md:translate-x-0 ${
+              isMenuOpen ? 'translate-x-0' : ''
+            }`}
+          >
+            <ul className="md:flex md:items-center md:h-full">
+              {renderedNavmenuItems}
+            </ul>
+          </div>
+          <div
+            className="hamburger inline-flex justify-center items-center w-6 h-6 hover:cursor-pointer md:hidden"
             onClick={toggleMenu}
           >
             <div
               className={`relative w-full h-[1px] bg-black transition-all duration-100 ${
-                isMenuOpen ? `bg-transparent rotate-[135deg]` : ``
+                isMenuOpen ? `rotate-[135deg]` : ``
               }`}
             >
               <span
                 className={`absolute top-[-7px] w-full h-[1px] bg-black transition-all duration-100 ${
-                  isMenuOpen ? `top-[0px]` : ``
+                  isMenuOpen ? `top-[0]` : ``
                 }`}
               ></span>
               <span
                 className={`absolute top-[7px] w-full h-[1px] bg-black transition-all duration-100 ${
-                  isMenuOpen ? `top-[0px] rotate-90` : ``
+                  isMenuOpen ? `top-[0] rotate-90` : ``
                 }`}
               ></span>
             </div>
           </div>
-          <ul>{renderedNavmenuItems}</ul>
         </div>
       </nav>
     </header>
