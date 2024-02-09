@@ -48,8 +48,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div
-            className={`navMenu fixed top-0 right-0 bottom-0 w-9/12 py-24 bg-[lightgray] translate-x-full transition transition-all md:relative md:flex md:w-auto md:h-full md:py-0 md:translate-x-0 md:transition-none ${
-              isMenuOpen ? 'translate-x-[0]' : ''
+            className={`navMenu fixed top-0 right-0 bottom-0 w-9/12 py-24 bg-[lightgray] transition transition-all md:relative md:flex md:w-auto md:h-full md:py-0 md:translate-x-0 md:transition-none ${
+              isMenuOpen ? 'translate-x-[0]' : 'translate-x-full'
             }`}
           >
             <ul className="md:flex md:items-center md:h-full">
@@ -62,17 +62,17 @@ const Navbar = () => {
           >
             <div
               className={`relative w-full h-[1px] bg-black transition transition-all ${
-                isMenuOpen ? `rotate-[135deg]` : ``
+                isMenuOpen ? 'rotate-[135deg]' : 'rotate-0'
               }`}
             >
               <span
-                className={`absolute top-[-7px] w-full h-[1px] bg-black transition transition-all ${
-                  isMenuOpen ? `top-[0]` : ``
+                className={`absolute w-full h-[1px] bg-black transition transition-all ${
+                  isMenuOpen ? 'top-[0]' : 'top-[-7px]'
                 }`}
               ></span>
               <span
-                className={`absolute top-[7px] w-full h-[1px] bg-black transition transition-all ${
-                  isMenuOpen ? `top-[0] rotate-90` : ``
+                className={`absolute w-full h-[1px] bg-black transition transition-all ${
+                  isMenuOpen ? 'top-[0] rotate-90' : 'top-[7px] rotate-0'
                 }`}
               ></span>
             </div>
