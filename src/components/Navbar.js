@@ -81,6 +81,7 @@ const Navbar = () => {
             className={`overlay fixed inset-0 bg-transparentWhite transition transition-all md:hidden ${
               isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'
             }`}
+            onClick={toggleMenu}
           ></div>
         </div>
       </nav>
