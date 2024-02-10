@@ -13,7 +13,20 @@ const config: Config = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend: {},
+    extend: {
+      height: {
+        navbarHeight: '4rem',
+      },
+      padding: {
+        offsetNavbarHeight: '4rem',
+      },
+      colors: {
+        midBlack: '#333333',
+        white: '#f9f9f9',
+        transparentWhite: 'rgba(249,249,249,0.7)',
+        transparentBlack: 'rgba(51,51,51,0.7)',
+      },
+    },
   },
   plugins: [],
 };
