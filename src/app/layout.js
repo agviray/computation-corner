@@ -11,7 +11,7 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body>
         <Navbar />
-        <div className="contentWrapper pt-offsetNavbarHeight">{children}</div>
+        <div className="contentWrapper px-5">{children}</div>
       </body>
     </html>
   );
