@@ -31,7 +31,7 @@ const Navbar = () => {
   const renderedNavmenuItems = NAV_ITEMS.map(({ text, href }, index) => (
     <li key={index}>
       <Link href={href} onClick={toggleMenu}>
-        <span className="inline-block w-full text-white text-center py-3 md:px-4 md:py-0 md:leading-[64px] hover:tracking-[1.5px] hover:text-darkLime hover:bg-black transition transition-all">
+        <span className="inline-block w-full py-3 text-white text-center md:px-4 md:py-0 md:leading-[64px] hover:tracking-[1.5px] hover:text-darkLime hover:bg-black transition transition-all">
           {text}
         </span>
       </Link>

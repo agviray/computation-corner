@@ -33,6 +33,12 @@ const config: Config = {
         darkestDarkGreen: '#0D2A2A',
         darkLime: '#A2F434',
       },
+      fontFamily: {
+        notoSansMono: ['var(--font-noto-sans-mono)'],
+        lora: ['var(--font-lora)'],
+        archivo: ['var(--font-archivo)'],
+        archivoNarrow: ['var(--font-archivo-narrow)'],
+      },
     },
   },
   plugins: [],
