@@ -1,6 +1,6 @@
 const GlossaryPage = () => {
   return (
-    <main>
+    <main className="pt-offsetNavbarHeight">
       <section>
         <div>
           <h1>Glossary Page</h1>

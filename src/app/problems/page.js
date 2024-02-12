@@ -1,6 +1,6 @@
 const ProblemsPage = () => {
   return (
-    <main>
+    <main className="pt-offsetNavbarHeight">
       <section>
         <div>
           <h1>Problems Page</h1>
