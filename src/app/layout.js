@@ -44,7 +44,7 @@ const RootLayout = ({ children }) => {
     >
       <body>
         <Navbar />
-        <div className="contentWrapper px-5">{children}</div>
+        <div className="contentWrapper">{children}</div>
       </body>
     </html>
   );
