@@ -26,7 +26,7 @@ const AboutPage = () => {
       key={index}
       className={`${
         index === 0 ? '' : 'pt-4'
-      } font-archivo font-light text-lightBlack text-lg tracking-wider`}
+      } font-archivo font-light text-lightBlack text-base md:text-lg tracking-wider`}
     >
       {text}
     </p>

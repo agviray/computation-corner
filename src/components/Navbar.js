@@ -31,7 +31,7 @@ const Navbar = () => {
   const renderedNavmenuItems = NAV_ITEMS.map(({ text, href }, index) => (
     <li key={index}>
       <Link href={href} onClick={toggleMenu}>
-        <span className="inline-block w-full py-3 text-white text-center md:px-4 md:py-0 md:leading-[64px] hover:tracking-[1.5px] hover:text-darkLime hover:bg-black transition ease-in transition-all">
+        <span className="inline-block w-full py-3 text-white text-center text-xl font-archivoNarrow tracking-widest md:px-4 md:py-0 md:leading-[64px] hover:tracking-[3px] hover:text-darkLime hover:bg-black transition ease-in transition-all">
           {text}
         </span>
       </Link>
@@ -44,7 +44,9 @@ const Navbar = () => {
         <div className="innerContainer relative flex justify-between items-center h-full px-4 lg:max-w-5xl lg:mx-auto">
           <div className="logoContainer">
             <Link href="/">
-              <span className="text-darkLime">ComCor</span>
+              <span className="text-darkLime text-xl tracking-wider font-notoSansMono font-semibold">
+                ComCor
+              </span>
             </Link>
           </div>
           <div
