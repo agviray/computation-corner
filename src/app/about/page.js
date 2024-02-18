@@ -11,12 +11,12 @@ const contentParagraphs = [
     text: `Computation Corner is an ongoing, personal project that contains a
     collection of information relating to data structures and
     algorithms. Such information includes a glossary, as well as
-    problems and solutions.`,
+    algorithmic problems and my solutions.`,
   },
   {
     text: `I'm building Computation Corner with the intentions of having
-    it serve as both a direct DSA resource, and a space to record the
-    logic involved in solving various problems.`,
+    it serve as both a direct resource for DSA information, and a space to record my
+    logic for solving various DSA problems.`,
   },
 ];
 
