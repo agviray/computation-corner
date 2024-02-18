@@ -14,14 +14,14 @@ const GlossaryPage = () => {
             <p className="font-archivo font-light text-lightBlack text-lg tracking-wider">
               This is the Glossary Page.
             </p>
-            <p className="pt-6 font-archivo font-light text-lightBlack text-lg tracking-wider">
+            <p className="pt-4 font-archivo font-light text-lightBlack text-lg tracking-wider">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo,
               soluta veritatis voluptatem mollitia debitis voluptas recusandae
               aut exercitationem atque magnam consequatur velit odit laboriosam
               doloremque ut vitae labore qui laudantium accusantium praesentium
               eveniet facilis quae similique! Rem minima unde delectus.
             </p>
-            <p className="pt-6 font-archivo font-light text-lightBlack text-lg tracking-wider">
+            <p className="pt-4 font-archivo font-light text-lightBlack text-lg tracking-wider">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
               magnam molestias laudantium a aliquid iure vitae eaque voluptatem
               amet cum veritatis, soluta necessitatibus suscipit consectetur?
