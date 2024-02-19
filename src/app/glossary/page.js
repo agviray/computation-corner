@@ -1,3 +1,5 @@
+import ParagraphCollection from '@/components/ParagraphCollection';
+
 const heroContent = {
   heading: `Glossary`,
   backgroundImage: {
@@ -13,17 +15,6 @@ const contentParagraphs = [
 ];
 
 const GlossaryPage = () => {
-  const renderedContentParagraphs = contentParagraphs.map(({ text }, index) => (
-    <p
-      key={index}
-      className={`${
-        index === 0 ? '' : 'pt-4'
-      } font-archivo font-light text-lightBlack text-base md:text-lg tracking-wider`}
-    >
-      {text}
-    </p>
-  ));
-
   return (
     <main className="pt-offsetNavbarHeight">
       <section>
@@ -35,7 +26,9 @@ const GlossaryPage = () => {
       </section>
       <div className="px-5 py-20 md:py-28">
         <section>
-          <div className="max-w-3xl mx-auto">{renderedContentParagraphs}</div>
+          <div className="max-w-3xl mx-auto">
+            <ParagraphCollection paragraphs={contentParagraphs} />
+          </div>
         </section>
       </div>
     </main>
