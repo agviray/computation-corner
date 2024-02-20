@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import ThemedLink from '../components/ThemedLink';
 
 const HomePage = () => {
   return (
@@ -14,11 +14,7 @@ const HomePage = () => {
             </span>
           </h1>
           <div className="pt-6 lg:pt-8">
-            <Link href="/about">
-              <span className="inline-flex items-center h-10 px-4 text-white text-l font-notoSansMono tracking-wide border-solid border border-darkLime lg:h-12 lg:px-6">
-                WHAT&apos;S THIS?
-              </span>
-            </Link>
+            <ThemedLink href={'/about'} text={`WHAT'S THIS?`} />
           </div>
         </div>
       </section>
