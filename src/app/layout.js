@@ -6,6 +6,7 @@ import {
 } from 'next/font/google';
 import './globals.css';
 import Navbar from '../components/Navbar';
+import FooterContent from '../components/FooterContent';
 
 const noto_sans_mono = Noto_Sans_Mono({
   subsets: ['latin'],
@@ -44,7 +45,10 @@ const RootLayout = ({ children }) => {
     >
       <body>
         <Navbar />
-        <div className="contentWrapper">{children}</div>
+        <div className="contentWrapper min-h-screen">{children}</div>
+        <footer>
+          <FooterContent />
+        </footer>
       </body>
     </html>
   );
