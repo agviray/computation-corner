@@ -5,7 +5,7 @@ const Card = ({ icon, heading, text }) => {
     <div class="card">
       <div className="iconContainer">
         <span>
-          <Image src={icon.src} alt={icon.alt} />
+          <Image src={icon.src} alt={icon.alt} width="100" height="100" />
         </span>
         <h3>{heading}</h3>
         <div className="textContainer">{text}</div>
