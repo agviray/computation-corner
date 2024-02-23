@@ -23,6 +23,8 @@ const config: Config = {
       colors: {
         transparentWhite: 'rgba(249,249,249,0.7)',
         transparentBlack: 'rgba(51,51,51,0.7)',
+        lightestBlack: '#3b3c36!',
+        lighterBlack: '#343434',
         lightBlack: '#333333',
         black: '#000000',
         white: '#f9f9f9',

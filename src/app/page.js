@@ -7,7 +7,7 @@ const cardContent = [
       src: '/images/laptop-icon.svg',
       alt: 'Icon of a laptop with a closing tag on its screen',
     },
-    heading: `ABOUT`,
+    heading: `PURPOSE`,
     text: `What is Computation Corner?`,
   },
   {
@@ -15,8 +15,8 @@ const cardContent = [
       src: '/images/head-with-brain-outline-icon.svg',
       alt: 'Icon of an outline of a head with a brain',
     },
-    heading: `PROBLEMS`,
-    text: `A collection of algorithm problems and my current solutions`,
+    heading: `LEARN, SOLVE, IMPROVE`,
+    text: `Record of algorithm problems and my current solutions.`,
   },
   {
     icon: {
@@ -24,7 +24,7 @@ const cardContent = [
       alt: 'Icon of a book with a circled letter i on top',
     },
     heading: `GLOSSARY`,
-    text: `Terms and definitions`,
+    text: `Terms and definitions.`,
   },
 ];
 
@@ -38,7 +38,7 @@ const HomePage = () => {
     <main className="pt-offsetNavbarHeight">
       <section className="bg-black">
         <div className="hero mx-auto py-20 md:py-28 px-4 md:max-w-4xl">
-          <h1 className="font-notoSansMono text-darkLime font-bold text-3xl tracking-wide md:text-4xl md:tracking-wider lg:text-5xl">
+          <h1 className="font-notoSansMono text-darkLime font-bold text-5xl tracking-wide md:tracking-wider lg:text-6xl">
             <span className="inline-flex flex-col">
               <span className="inline-block lg:padding-bottom: pb-2">
                 COMPUTATION
@@ -52,7 +52,9 @@ const HomePage = () => {
         </div>
       </section>
       <section className="px-5 py-14 md:py-28">
-        <div className="max-w-3xl mx-auto">{renderedContent}</div>
+        <div className="flex flex-col items-center gap-4 max-w-3xl mx-auto">
+          {renderedContent}
+        </div>
       </section>
     </main>
   );
