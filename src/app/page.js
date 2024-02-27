@@ -9,6 +9,7 @@ const cardContent = [
     },
     heading: `PURPOSE`,
     text: `What is Computation Corner?`,
+    linkHref: `/about`,
   },
   {
     icon: {
@@ -17,6 +18,7 @@ const cardContent = [
     },
     heading: `LEARN, SOLVE, IMPROVE`,
     text: `Record of algorithm problems and my current solutions.`,
+    linkHref: `/problems`,
   },
   {
     icon: {
@@ -25,10 +27,11 @@ const cardContent = [
     },
     heading: `GLOSSARY`,
     text: `Terms and definitions.`,
+    linkHref: `/glossary`,
   },
 ];
 
-const themeClasses = {
+const heroThemedLinkClasses = {
   textColor: 'text-white',
   borderColor: 'border-darkLime',
   hoverTextColor: 'hover:text-darkLime',
@@ -39,11 +42,13 @@ const themeClasses = {
 };
 
 const HomePage = () => {
-  const renderedContent = cardContent.map(({ icon, heading, text }, index) => (
-    <>
-      <Card icon={icon} heading={heading} text={text} />
-    </>
-  ));
+  const renderedContent = cardContent.map(
+    ({ icon, heading, text, linkHref }, index) => (
+      <>
+        <Card icon={icon} heading={heading} text={text} linkHref={linkHref} />
+      </>
+    )
+  );
   return (
     <main className="pt-offsetNavbarHeight">
       <section className="bg-black">
@@ -59,7 +64,7 @@ const HomePage = () => {
           <div className="pt-6 lg:pt-8">
             <ThemedLink
               href={'/about'}
-              themeClasses={themeClasses}
+              themeClasses={heroThemedLinkClasses}
               text={`WHAT'S THIS?`}
             />
           </div>
