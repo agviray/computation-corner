@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import forwardArrow from '../../public/images/forward-arrow-01.svg';
+import CircleArrowLink from '../components/CircleArrowLink';
 
 const Card = ({ icon, heading, text, linkHref }) => {
   return (
@@ -18,11 +17,7 @@ const Card = ({ icon, heading, text, linkHref }) => {
           {text}
         </div>
         <div className="arrowContainer pt-4">
-          <Link href={linkHref}>
-            <span className="inline-flex justify-center items-center w-12 h-12 bg-darkLime rounded-full">
-              <Image src={forwardArrow} alt="Arrow icon" width="25" />
-            </span>
-          </Link>
+          <CircleArrowLink linkHref={linkHref} />
         </div>
       </div>
     </div>
