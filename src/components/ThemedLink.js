@@ -1,10 +1,22 @@
 import Link from 'next/link';
 
-const ThemedLink = ({ href, text }) => {
+const ThemedLink = ({ href, themeClasses, text }) => {
+  const {
+    textColor,
+    borderColor,
+    hoverTextColor,
+    hoverBorderColor,
+    hoverBgColor,
+    activeTextColor,
+    activeBgColor,
+  } = themeClasses;
+
   return (
     <>
       <Link href={href}>
-        <span className="inline-flex items-center h-10 px-4 text-white text-l font-notoSansMono tracking-wide border-solid border border-darkLime lg:h-12 lg:px-6 hover:text-darkLime hover:bg-darkerDarkGreen hover:border-darkerDarkGreen active:text-white active:bg-black transition ease-in transition-all">
+        <span
+          className={`inline-flex items-center h-10 px-4 ${textColor} text-lg font-notoSansMono tracking-wide border border-solid ${borderColor} lg:h-12 lg:px-6 transition ease-in transition-all ${hoverTextColor} ${hoverBorderColor} ${hoverBgColor} ${activeTextColor} ${activeBgColor}`}
+        >
           {text}
         </span>
       </Link>

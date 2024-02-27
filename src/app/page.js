@@ -28,6 +28,16 @@ const cardContent = [
   },
 ];
 
+const themeClasses = {
+  textColor: 'text-white',
+  borderColor: 'border-darkLime',
+  hoverTextColor: 'hover:text-darkLime',
+  hoverBorderColor: 'hover:border-darkerDarkGreen',
+  hoverBgColor: 'hover:bg-darkerDarkGreen',
+  activeTextColor: 'active:text-white',
+  activeBgColor: 'active:bg-black',
+};
+
 const HomePage = () => {
   const renderedContent = cardContent.map(({ icon, heading, text }, index) => (
     <>
@@ -47,7 +57,11 @@ const HomePage = () => {
             </span>
           </h1>
           <div className="pt-6 lg:pt-8">
-            <ThemedLink href={'/about'} text={`WHAT'S THIS?`} />
+            <ThemedLink
+              href={'/about'}
+              themeClasses={themeClasses}
+              text={`WHAT'S THIS?`}
+            />
           </div>
         </div>
       </section>
