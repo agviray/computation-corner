@@ -17,7 +17,7 @@ const cardContent = [
       src: '/images/head-with-brain-outline-icon.svg',
       alt: 'Icon of an outline of a head with a brain',
     },
-    heading: `LEARN, SOLVE, IMPROVE`,
+    heading: `LEARN & IMPROVE`,
     text: `Record of algorithm problems and my current solutions.`,
     linkHref: `/problems`,
   },
@@ -72,7 +72,7 @@ const HomePage = () => {
         </div>
       </section>
       <section className="px-5 py-14 md:py-28">
-        <div className="flex flex-col items-center gap-4 max-w-3xl mx-auto">
+        <div className="flex flex-col items-center gap-4 max-w-4xl mx-auto md:flex-row md:items-stretch md:h-max md:flex-wrap md:gap-6 min-[856px]:justify-evenly">
           {renderedContent}
         </div>
       </section>
