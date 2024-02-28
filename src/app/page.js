@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import ThemedLink from '../components/ThemedLink';
 import Card from '../components/Card';
 
@@ -44,9 +45,9 @@ const heroThemedLinkClasses = {
 const HomePage = () => {
   const renderedContent = cardContent.map(
     ({ icon, heading, text, linkHref }, index) => (
-      <>
+      <Fragment key={index}>
         <Card icon={icon} heading={heading} text={text} linkHref={linkHref} />
-      </>
+      </Fragment>
     )
   );
   return (

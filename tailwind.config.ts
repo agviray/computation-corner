@@ -35,6 +35,7 @@ const config: Config = {
         darkerDarkGreen: '#005051',
         darkestDarkGreen: '#0D2A2A',
         darkLime: '#A2F434',
+        darkerLime: '#74C30B',
       },
       fontFamily: {
         notoSansMono: ['var(--font-noto-sans-mono)'],

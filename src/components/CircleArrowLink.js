@@ -1,14 +1,30 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import forwardArrow from '../../public/images/forward-arrow-01.svg';
+import forwardArrowDark from '../../public/images/forward-arrow-dark.svg';
+import forwardArrowLight from '../../public/images/forward-arrow-light.svg';
 
-const CircleArrowLink = ({ linkHref }) => {
+// group-hover styles are applied when parent group is hovered.
+const CircleArrowLink = () => {
   return (
-    <Link href={linkHref}>
-      <span className="inline-flex justify-center items-center w-12 h-12 bg-darkLime rounded-full">
-        <Image src={forwardArrow} alt="Arrow icon" width="25" />
-      </span>
-    </Link>
+    <div className="relative inline-flex justify-center items-center w-12 h-12 rounded-full border-[3px] border-solid border-darkerLime overflow-hidden transition ease-in transition-all group-hover:bg-midDarkGreen group-hover:border-midDarkGreen">
+      <div className="absolute right-0 inline-flex items-center w-24 transition ease-in transition-all group-hover:right-[-48px]">
+        <span className="relative left-[3px] inline-block w-12">
+          <Image
+            src={forwardArrowLight}
+            alt="Arrow icon"
+            width="25"
+            className="mx-auto"
+          />
+        </span>
+        <span className="relative left-[3px] inline-block w-12">
+          <Image
+            src={forwardArrowDark}
+            alt="Arrow icon"
+            width="25"
+            className="mx-auto"
+          />
+        </span>
+      </div>
+    </div>
   );
 };
 
