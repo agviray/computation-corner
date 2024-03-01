@@ -1,6 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import siteLogo from '../../public/images/com-cor-logo.png';
 
 const NAV_ITEMS = [
   {
@@ -42,10 +44,10 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 w-full z-50">
       <nav className="relative h-navbarHeight bg-darkestDarkGreen">
         <div className="innerContainer relative flex justify-between items-center h-full px-4 lg:max-w-5xl lg:mx-auto">
-          <div className="logoContainer">
-            <Link href="/">
-              <span className="text-darkLime text-xl tracking-wider font-notoSansMono font-semibold">
-                ComCor
+          <div className="logoContainer flex items-center h-full overflow-hidden">
+            <Link href="/" className="text-[0] leading-none">
+              <span className="inline-block text-[0] leading-none">
+                <Image src={siteLogo} alt="Website logo of laptop" width="50" />
               </span>
             </Link>
           </div>
