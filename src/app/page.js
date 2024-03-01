@@ -53,21 +53,34 @@ const HomePage = () => {
   return (
     <main className="pt-offsetNavbarHeight">
       <section className="bg-black">
-        <div className="hero mx-auto py-20 md:py-28 px-4 md:max-w-4xl">
-          <h1 className="font-notoSansMono text-darkLime font-bold text-5xl tracking-wide md:tracking-wider lg:text-6xl">
-            <span className="inline-flex flex-col">
-              <span className="inline-block lg:padding-bottom: pb-2">
-                COMPUTATION
+        <div className="hero relative">
+          <div className="absolute top-0 bottom-0 right-0 left-0 videoContainer w-full h-full overflow-hidden">
+            <div className="videoOverlay position absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-br from-black z-[1]"></div>
+            <video
+              className="absolute bottom-0 right-0 left-0 videoContainer w-full h-full object-cover"
+              src="/videos/abstract-rising-dotted-platform.mp4"
+              playsInline
+              autoPlay
+              muted
+              loop
+            ></video>
+          </div>
+          <div className="relative textContainer py-20 px-4 md:max-w-4xl md:mx-auto md:py-40 z-[2]">
+            <h1 className="font-notoSansMono text-darkLime font-bold text-5xl tracking-wide md:tracking-wider lg:text-6xl">
+              <span className="inline-flex flex-col">
+                <span className="inline-block lg:padding-bottom: pb-2">
+                  COMPUTATION
+                </span>
+                <span className="inline-block">CORNER</span>
               </span>
-              <span className="inline-block">CORNER</span>
-            </span>
-          </h1>
-          <div className="pt-6 lg:pt-8">
-            <ThemedLink
-              href={'/about'}
-              themeClasses={heroThemedLinkClasses}
-              text={`WHAT'S THIS?`}
-            />
+            </h1>
+            <div className="pt-6 lg:pt-8">
+              <ThemedLink
+                href={'/about'}
+                themeClasses={heroThemedLinkClasses}
+                text={`WHAT'S THIS?`}
+              />
+            </div>
           </div>
         </div>
       </section>
