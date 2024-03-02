@@ -27,10 +27,11 @@ const Accordion = ({ content }) => {
         </div>
       </div>
       <div
-        className={`mainContentContainer ${
-          isOpen ? `block` : `hidden`
-        } px-4 py-6 font-archivo font-light text-lightBlack text-base tracking-wider border border-black md:text-lg`}
+        className={`mainContentContainer relative ${
+          isOpen ? `block mb-8` : `hidden`
+        } h-36 px-4 py-6 font-archivo font-light text-lightBlack text-base tracking-wider shadow-lg overflow-hidden md:text-lg`}
       >
+        <div className="mainContentContainerOverlay absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white z-[1]"></div>
         {snippetText}
       </div>
     </div>

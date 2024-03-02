@@ -55,7 +55,7 @@ const HomePage = () => {
       <section className="bg-black">
         <div className="hero relative">
           <div className="absolute top-0 bottom-0 right-0 left-0 videoContainer w-full h-full overflow-hidden">
-            <div className="videoOverlay position absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-br from-black z-[1]"></div>
+            <div className="videoOverlay position absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-black z-[1]"></div>
             <video
               className="absolute bottom-0 right-0 left-0 videoContainer w-full h-full object-cover"
               src="/videos/abstract-rising-dotted-platform.mp4"
