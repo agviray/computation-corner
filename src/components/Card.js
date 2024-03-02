@@ -6,8 +6,8 @@ import CircleArrowLink from '../components/CircleArrowLink';
 const Card = ({ icon, heading, text, linkHref }) => {
   return (
     <Link href={linkHref} className="group inline-block text-[0]">
-      <div className="card md:flex md:flex-col w-64 border border-solid border-lightBlack transition ease-in transition-all group-hover:scale-105 group-hover:shadow-xl md:h-full">
-        <div className="iconContainer flex justify-center items-center min-h-[170px] p-8 bg-black">
+      <div className="card md:flex md:flex-col w-64 border border-solid border-lighterBlack transition ease-in transition-all group-hover:scale-105 group-hover:shadow-xl md:h-full">
+        <div className="iconContainer flex justify-center items-center min-h-[170px] p-8 bg-lightBlack">
           <span className="inline-block text-[0] leading-none">
             <Image src={icon.src} alt={icon.alt} width="100" height="100" />
           </span>
