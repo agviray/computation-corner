@@ -1,4 +1,5 @@
 import ParagraphCollection from '@/components/ParagraphCollection';
+import Accordion from '../../components/Accordion';
 
 const heroContent = {
   heading: `Glossary`,
@@ -14,7 +15,28 @@ const contentParagraphs = [
   },
 ];
 
+const glossaryContent = [
+  {
+    heading: `Accordion Item 1`,
+    snippetText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci cupiditate illum explicabo facere voluptate delectus enim laboriosam autem reiciendis ea modi repellendus nesciunt, sit unde soluta beatae dolorem quo.`,
+  },
+  {
+    heading: `Accordion Item 2`,
+    snippetText: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, quam officia explicabo unde obcaecati dignissimos amet alias omnis dicta sapiente?`,
+  },
+  {
+    heading: `Accordion Item 3`,
+    snippetText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo architecto qui temporibus modi debitis. Illum nemo officiis a rerum placeat quidem blanditiis fuga, omnis repellendus.`,
+  },
+];
+
 const GlossaryPage = () => {
+  const renderedGlossaryContent = glossaryContent.map((content, index) => (
+    <article key={index}>
+      <Accordion content={content} />
+    </article>
+  ));
+
   return (
     <main className="pt-offsetNavbarHeight">
       <section>
@@ -28,6 +50,9 @@ const GlossaryPage = () => {
         <section>
           <div className="max-w-3xl mx-auto">
             <ParagraphCollection paragraphs={contentParagraphs} />
+            <div className="glossaryContentContainer">
+              <section>{renderedGlossaryContent}</section>
+            </div>
           </div>
         </section>
       </div>
