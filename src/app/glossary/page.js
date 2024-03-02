@@ -49,7 +49,9 @@ const GlossaryPage = () => {
       <div className="px-5 py-14 md:py-28">
         <section>
           <div className="max-w-3xl mx-auto">
-            <ParagraphCollection paragraphs={contentParagraphs} />
+            <div className="description pb-12">
+              <ParagraphCollection paragraphs={contentParagraphs} />
+            </div>
             <div className="glossaryContentContainer">
               <section>{renderedGlossaryContent}</section>
             </div>

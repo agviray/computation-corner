@@ -33,12 +33,12 @@ const cardContent = [
 ];
 
 const heroThemedLinkClasses = {
-  textColor: 'text-white',
+  textColor: 'text-offWhite',
   borderColor: 'border-darkLime',
   hoverTextColor: 'hover:text-darkLime',
   hoverBorderColor: 'hover:border-darkerDarkGreen',
   hoverBgColor: 'hover:bg-darkerDarkGreen',
-  activeTextColor: 'active:text-white',
+  activeTextColor: 'active:text-offWhite',
   activeBgColor: 'active:bg-black',
 };
 

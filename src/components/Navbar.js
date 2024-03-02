@@ -33,7 +33,7 @@ const Navbar = () => {
   const renderedNavmenuItems = NAV_ITEMS.map(({ text, href }, index) => (
     <li key={index}>
       <Link href={href} onClick={toggleMenu}>
-        <span className="inline-block w-full py-3 text-white text-center text-xl font-archivoNarrow tracking-widest md:px-4 md:py-0 md:leading-[64px] hover:tracking-[3px] hover:text-darkLime hover:bg-black transition ease-in transition-all">
+        <span className="inline-block w-full py-3 text-offWhite text-center text-xl font-archivoNarrow tracking-widest md:px-4 md:py-0 md:leading-[64px] hover:tracking-[3px] hover:text-darkLime hover:bg-black transition ease-in transition-all">
           {text}
         </span>
       </Link>
@@ -65,17 +65,17 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             <div
-              className={`relative w-full h-[1px] bg-white z-[1] transition transition-all ${
+              className={`relative w-full h-[1px] bg-offWhite z-[1] transition transition-all ${
                 isMenuOpen ? 'rotate-[135deg]' : 'rotate-0'
               }`}
             >
               <span
-                className={`absolute w-full h-[1px] bg-white z-[1] transition transition-all ${
+                className={`absolute w-full h-[1px] bg-offWhite z-[1] transition transition-all ${
                   isMenuOpen ? 'top-[0]' : 'top-[-7px]'
                 }`}
               ></span>
               <span
-                className={`absolute w-full h-[1px] bg-white z-[1] transition transition-all ${
+                className={`absolute w-full h-[1px] bg-offWhite z-[1] transition transition-all ${
                   isMenuOpen ? 'top-[0] rotate-90' : 'top-[7px] rotate-0'
                 }`}
               ></span>
