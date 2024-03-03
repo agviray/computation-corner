@@ -1,9 +1,8 @@
 'use client';
 import { useState } from 'react';
 
-const Accordion = ({ content }) => {
+const Accordion = ({ heading, textSnippet }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { heading, snippetText } = content; // Destructured properties from content prop
 
   return (
     <div className="accordion">
@@ -32,7 +31,7 @@ const Accordion = ({ content }) => {
         } h-36 px-4 py-6 font-archivo font-light text-lightBlack text-base tracking-wider shadow-lg overflow-hidden md:text-lg`}
       >
         <div className="mainContentContainerOverlay absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white z-[1]"></div>
-        {snippetText}
+        {textSnippet}
       </div>
     </div>
   );
